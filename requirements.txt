@@ -1,10 +1,13 @@
+absl-py==1.0.0
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
 attrs==21.2.0
 backcall==0.2.0
 bleach==4.1.0
+cachetools==4.2.4
 certifi==2021.10.8
 cffi==1.15.0
+charset-normalizer==2.0.9
 colorama==0.4.4
 cycler==0.11.0
 debugpy==1.5.1
@@ -12,6 +15,11 @@ decorator==5.1.0
 defusedxml==0.7.1
 entrypoints==0.3
 fonttools==4.28.3
+google-auth==2.3.3
+google-auth-oauthlib==0.4.6
+grpcio==1.43.0
+idna==3.3
+importlib-metadata==4.9.0
 ipykernel==6.6.0
 ipython==7.30.1
 ipython-genutils==0.2.0
@@ -35,6 +43,7 @@ jupyterthemes==0.20.0
 kiwisolver==1.3.2
 lesscpy==0.15.0
 lxml==4.7.1
+Markdown==3.3.6
 MarkupSafe==2.0.1
 matplotlib==3.5.1
 matplotlib-inline==0.1.3
@@ -45,6 +54,7 @@ nbformat==5.1.3
 nest-asyncio==1.5.4
 notebook==6.4.6
 numpy==1.21.4
+oauthlib==3.1.1
 packaging==21.3
 pandas==1.3.5
 pandocfilters==1.5.0
@@ -54,6 +64,9 @@ Pillow==8.4.0
 ply==3.11
 prometheus-client==0.12.0
 prompt-toolkit==3.0.24
+protobuf==3.19.1
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
 pycparser==2.21
 Pygments==2.10.0
 pyparsing==3.0.6
@@ -66,22 +79,35 @@ PyYAML==6.0
 pyzmq==22.3.0
 qtconsole==5.2.2
 QtPy==1.11.3
+requests==2.26.0
+requests-oauthlib==1.3.0
+rsa==4.8
 scikit-learn==1.0.1
 scipy==1.7.3
 seaborn==0.11.2
 Send2Trash==1.8.0
 six==1.16.0
+tensorboard==2.7.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
 terminado==0.12.1
 testpath==0.5.0
 threadpoolctl==3.0.0
-torch==1.10.0+cu102
-torchaudio==0.10.0+cu102
-torchvision==0.11.1+cu102
+-f https://download.pytorch.org/whl/cu102/torch_stable.html
+torch==1.10.1+cu102
+-f https://download.pytorch.org/whl/cu102/torch_stable.html
+torchaudio==0.10.1+cu102
+-f https://download.pytorch.org/whl/cu102/torch_stable.html
+torchvision==0.11.2+cu102
 tornado==6.1
+tqdm==4.62.3
 traitlets==5.1.1
 typing_extensions==4.0.1
+urllib3==1.26.7
 wcwidth==0.2.5
 webencodings==0.5.1
+Werkzeug==2.0.2
 widgetsnbextension==3.5.2
 wincertstore==0.2
 yapf==0.31.0
+zipp==3.6.0
