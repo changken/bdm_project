@@ -1,13 +1,14 @@
 import torch.nn as nn
 
-class NeuralNetwork(nn.Module):
+
+class AENet(nn.Module):
     def __init__(self):
-        super(NeuralNetwork, self).__init__()
+        super(AENet, self).__init__()
         self.encoder = nn.Sequential(
             nn.Linear(196, 64),
             nn.ELU(),
             nn.Linear(64, 16),
-            nn.ELU(),
+            nn.ELU()
         )
         self.decoder = nn.Sequential(
             nn.Linear(16, 64),

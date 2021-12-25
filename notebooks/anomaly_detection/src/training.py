@@ -1,5 +1,16 @@
 import torch
 from tqdm.notebook import tqdm
+from datetime import datetime
+
+
+def get_log_name(model, loss_fn, optimizer, epochs, batch_size, lr):
+    m = model.__class__.__name__
+    l_fn = loss_fn.__class__.__name__
+    opt = optimizer.__class__.__name__
+    dt = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    dt = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    return f'{m}_ep-{epochs}_bs-{batch_size}_lr-{lr}_l-fn-{l_fn}_opt-{opt}_{dt}'
 
 
 def train(dataloader, model, loss_fn, optimizer, device):
